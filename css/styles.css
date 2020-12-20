@@ -23,7 +23,8 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /*outline: 2px solid tomato;*/
+  display: block;
+  outline: 2px solid tomato;
 }
 
 /*Hero*/
@@ -57,13 +58,12 @@ body {
   padding: 10px 32px;
   min-width: 145px;
 
-  font-style: 400;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
 
-  border: 1px solid var(--primary-white-color);
   border-radius: 0px 0px 4px 4px;
 
   cursor: pointer;
@@ -73,7 +73,8 @@ body {
 .work {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 94px;
+  padding-top: 89px;
+  padding-bottom: 94px;
   padding-inline-start: 0;
 
   font-size: 14px;
@@ -119,7 +120,6 @@ body {
   line-height: 1.17;
   text-align: center;
 
-  padding-top: 94px;
   margin-bottom: 50px;
 
   color: var(--primary-text-color);
@@ -131,6 +131,7 @@ body {
   flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
+  padding-bottom: 94px;
   padding-inline-start: 0;
 }
 
@@ -141,10 +142,12 @@ body {
 /* Раздел - Наша команда */
 
 .comanda {
+  display: block;
   display: flex;
   flex-wrap: wrap;
   margin-top: 0;
-  margin-bottom: 94px;
+  margin-bottom: 0;
+  padding-bottom: 94px;
   padding-inline-start: 0;
 }
 
@@ -194,7 +197,7 @@ body {
 /* Страничка Портфолио */
 
 .page-header {
-  border-bottom: 2px solid var(--secondary-text-color);
+  border-bottom: 1px solid #ececec;
 }
 
 /* Логотип*/
@@ -202,6 +205,11 @@ body {
   color: var(--accent-color);
 }
 .logo-secondary {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-inline-start: 0;
+
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -237,12 +245,16 @@ body {
 
 .site-nav .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--primary-text-color);
 }
 
+.item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .site-auth {
+  padding-inline-start: 0;
   display: flex;
   margin-right: 0;
   margin-left: 0;
@@ -253,11 +265,11 @@ body {
 }
 
 .site-auth .link {
+  display: block;
   color: var(--secondary-text-color);
 }
 
 .list {
-  padding: 0;
   margin: 0;
   font-weight: 500;
   font-size: 14px;
@@ -299,6 +311,12 @@ body {
 
   padding-top: 94px;
   padding-bottom: 34px;
+}
+
+.table .first-but,
+.table .second-but,
+.table .third-but {
+  color: #f5f4fa;
 }
 
 .first-but .primary {
@@ -385,6 +403,8 @@ body {
 
 /* Footer*/
 footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: var(--secondary-background-color);
 }
 
@@ -406,7 +426,7 @@ footer {
 
 .footer-portfolio {
   display: block;
-  padding-top: 60px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -416,7 +436,7 @@ footer {
   font-style: normal;
   color: var(--primary-white-color);
 
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-address {
@@ -426,7 +446,7 @@ footer {
   list-style: none;
 }
 
-.footer-address .item {
+.footer-address .item-fotter {
   margin-bottom: 9px;
 }
 
