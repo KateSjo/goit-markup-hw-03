@@ -24,12 +24,14 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   display: block;
+  /*outline: 2px solid tomato;*/
 }
 
 /*Hero*/
+
 .hero {
-  padding-top: 193px;
-  padding-bottom: 193px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
   letter-spacing: 0.06em;
 
@@ -69,14 +71,17 @@ body {
 }
 /*Раздел - Виимание к деталям*/
 
+.work-section {
+  padding-top: 89px;
+  padding-bottom: 94px;
+}
+
 .work {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 89px;
-  padding-bottom: 94px;
   padding-inline-start: 0;
 
-  font-size: 14px;
+  /*font-size: 14px;*/
 
   list-style: none;
 
@@ -99,6 +104,7 @@ body {
 }
 
 .work-title {
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -112,6 +118,10 @@ body {
   color: var(--secondary-text-color);
 }
 /*Раздел - Чем мы занимаемся*/
+
+.section-example {
+  padding-bottom: 94px;
+}
 
 .section-title {
   font-weight: 700;
@@ -130,7 +140,6 @@ body {
   flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 94px;
   padding-inline-start: 0;
 }
 
@@ -140,13 +149,16 @@ body {
 
 /* Раздел - Наша команда */
 
+.section-comanda {
+  padding-bottom: 94px;
+}
+
 .comanda {
   display: block;
   display: flex;
   flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 94px;
   padding-inline-start: 0;
 }
 
@@ -171,6 +183,11 @@ body {
   margin-bottom: 0;
 }
 
+.name-job {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .section-photos .name,
 .section-photos .job {
   font-size: 16px;
@@ -181,13 +198,12 @@ body {
 }
 .name {
   font-weight: 500;
-  padding-top: 30px;
+
   padding-bottom: 10px;
 
   color: var(--primary-text-color);
 }
 .job {
-  padding-bottom: 30px;
   font-weight: 400;
 
   color: var(--secondary-text-color);
@@ -223,6 +239,8 @@ body {
 
 .link {
   text-decoration: none;
+  /*padding-top: 32px;
+  padding-bottom: 32px;*/
 }
 
 .main-nav {
@@ -243,13 +261,10 @@ body {
 }
 
 .site-nav .link {
-  display: block;
-  color: var(--primary-text-color);
-}
-
-.item {
   padding-top: 32px;
   padding-bottom: 32px;
+  display: block;
+  color: var(--primary-text-color);
 }
 
 .site-auth {
@@ -264,6 +279,8 @@ body {
 }
 
 .site-auth .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: block;
   color: var(--secondary-text-color);
 }
@@ -307,30 +324,30 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 8px;
-
-  padding-top: 94px;
-  padding-bottom: 34px;
 }
 
-.table .first-but,
-.table .second-but,
-.table .third-but {
+.table .first-but {
   color: #f5f4fa;
 }
 
 .first-but .primary {
-  padding: 9px 22px 3px 22px;
-  margin-right: 8px;
-}
-
-.second-but .primary {
-  padding: 11px 22px 1px 22px;
-  margin-right: 8px;
-}
-
-.third-but .primary {
   padding: 6px 22px;
+  border-color: transparent;
+}
+
+.first-but {
+  padding-top: 94px;
+  padding-bottom: 34px;
   margin-right: 8px;
+  border-color: transparent;
+}
+
+.first-but:nth-child(5n) {
+  margin-right: 0;
+}
+
+.first-but:nth-last-child(-n + 5) {
+  margin-bottom: 0;
 }
 
 .list .button-primary,
@@ -351,6 +368,7 @@ body {
 /* Картинки с описанием*/
 
 .description.list {
+  padding-inline-start: 0;
   display: block;
   display: flex;
   flex-wrap: wrap;
@@ -375,10 +393,15 @@ body {
   margin-bottom: 0;
 }
 
+.photo-division {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+
 .photo-post {
   padding-inline-start: 0;
-  margin-bottom: 4px;
-  padding: 20px 24px 0px 24px;
+  padding-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
@@ -391,7 +414,6 @@ body {
 
 .division {
   padding-inline-start: 0;
-  padding: 0 24px 20px 24px;
 
   font-weight: 400;
   font-size: 16px;
@@ -407,9 +429,9 @@ footer {
   background: var(--secondary-background-color);
 }
 
-.logotype {
+/*.logotype {
   margin-bottom: 20px;
-}
+}*/
 
 .logo-sec {
   font-family: Raleway;
@@ -432,10 +454,11 @@ footer {
 }
 
 .address {
+  padding-top: 20px;
+  margin-bottom: 9px;
+
   font-style: normal;
   color: var(--primary-white-color);
-
-  margin-bottom: 9px;
 }
 
 .footer-address {
@@ -446,7 +469,7 @@ footer {
 }
 
 .footer-address .item-fotter {
-  margin-bottom: 9px;
+  padding-bottom: 9px;
 }
 
 .address-footer {
