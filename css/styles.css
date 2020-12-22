@@ -307,6 +307,11 @@ body {
 
 /* Cписок кнопок*/
 
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -336,7 +341,6 @@ body {
 }
 
 .first-but {
-  padding-top: 94px;
   padding-bottom: 34px;
   margin-right: 8px;
   border-color: transparent;
@@ -348,6 +352,10 @@ body {
 
 .first-but:nth-last-child(-n + 5) {
   margin-bottom: 0;
+}
+
+.site-nav .table {
+  margin-bottom: 50px;
 }
 
 .list .button-primary,
@@ -372,7 +380,6 @@ body {
   display: block;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 
 .section-photo {
@@ -454,7 +461,7 @@ footer {
 }
 
 .address {
-  padding-top: 20px;
+  margin-top: 20px;
   margin-bottom: 9px;
 
   font-style: normal;
@@ -468,9 +475,17 @@ footer {
   list-style: none;
 }
 
-.footer-address .item-fotter {
-  padding-bottom: 9px;
+.item-fotter {
+  margin-bottom: 9px;
 }
+
+.item-fotter:nth-child(2n) {
+  margin-bottom: 0;
+}
+
+/*.item-fotter:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}*/
 
 .address-footer {
   color: var(--adress-color);
