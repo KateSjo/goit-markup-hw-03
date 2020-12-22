@@ -104,6 +104,7 @@ body {
 }
 
 .work-title {
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -199,7 +200,7 @@ body {
 .name {
   font-weight: 500;
 
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   color: var(--primary-text-color);
 }
@@ -215,6 +216,11 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Логотип*/
 .logo-primary {
   color: var(--accent-color);
@@ -223,6 +229,7 @@ body {
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
+  padding-right: 93px;
   padding-inline-start: 0;
 
   font-family: Raleway;
@@ -239,8 +246,6 @@ body {
 
 .link {
   text-decoration: none;
-  /*padding-top: 32px;
-  padding-bottom: 32px;*/
 }
 
 .main-nav {
@@ -248,7 +253,6 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-
 .site-nav {
   padding-inline-start: 0;
   display: flex;
